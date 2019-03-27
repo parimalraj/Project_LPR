@@ -1,0 +1,88 @@
+<div style="text-align:center">
+  
+  <h1 style="color:darkblue; margin-top:40px">
+  <font face="Stencil Std"><U><b> Order Tracker (LPR)</b></U></font><br><br>
+    </h1>
+    <!--div containing text area for getting orderId from user -->
+  <div class="container">
+  <span id="l1"><!--<img src="assets/kpn2.PNG" style="float:left">--></span><b style="float:left; font-size:16px; color:#34282C ">Public Order no:</b><br>
+  <textarea [(ngModel)]='listFilter' name="listFilter" style="float:left" rows="2" cols="100" required></textarea>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  
+  <button type="button" [disabled]="!listFilter" (click)="getClassDataId(listFilter)" style="float:left; width:150px; height:1.4cm;" class="btn btn-primary">Submit</button><br><br><br><br><br><br>
+<!--div containing table for displaying data coming from springboot -->
+<div class="container">
+<div class="row">
+    <div class="col-lg-1 col-md-1 col-sm-1">
+    </div>
+    <div class="col-lg-12 col-md-8 col-sm-4">
+  <table border="2" bgcolor="lightseagreen" class="table table-striped">
+    
+    <thead>
+      <tr bgcolor="#472DCB" >
+
+        <th style="color: white"><h4>Public Order no:</h4></th>
+        <th style="color: white"><h4>WLP</h4></th>
+        <th style="color: white"><h4>Cordys</h4></th>
+         <th style="color: white"><h4>SIEBEL</h4></th>
+          <th style="color: white"><h4>AIA</h4></th>
+           <th style="color: white"><h4>BRM</h4></th>
+
+      </tr>
+    </thead>
+    <!--logic for getting and displaying data from list which is coming from springboot -->
+    <tbody>
+      <tr *ngFor="let book of myser" >
+        <td style="background-color:#0EBFE9"><b><font color="#990000">{{book.id}}</font></b></td>
+          <td style="color: blue" [ngClass]="{'red':book.status1==='Aborted',
+                'yellow':book.status1==='Open',
+                'orange':book.status1==='Wait',
+                'orange1':book.status1==='Not Reached',
+                'brown':book.status1==='Cancelled',
+                'grey1':book.status1==='Not Connected',
+                'grey':book.status1==='Invalid Order ID'}">
+                <b>{{book.status1}}</b>
+          </td>
+          <td style="color: blue" [ngClass]="{'red':book.status2==='Aborted',
+                'yellow':book.status2==='Open',
+                'orange':book.status2==='Wait',
+                'orange1':book.status2==='Not Reached',
+                'brown':book.status2==='Cancelled',
+                'grey1':book.status2==='Not Connected',
+                'grey':book.status2==='Invalid Order ID'}">
+                <b>{{book.status2}}</b>
+          </td>
+          <td style="color: blue" [ngClass]="{'red':book.status3==='Aborted',
+                'yellow':book.status3==='Open',
+                'orange':book.status3==='Wait',
+                'orange1':book.status3==='Not Reached',
+                'brown':book.status3==='Cancelled',
+                'grey1':book.status3==='Not Connected',
+                'grey':book.status3==='Invalid Order ID'}">
+                <b>{{book.status3}}</b>
+          </td>
+          <td style="color: blue" [ngClass]="{'red':book.status4==='Aborted',
+                'yellow':book.status4==='Open',
+                'orange':book.status4==='Wait',
+                'orange1':book.status4==='Not Reached',
+                'brown':book.status4==='Cancelled',
+                'grey1':book.status4==='Not Connected',
+                'grey':book.status4==='Invalid Order ID'}">
+                <b>{{book.status4}}</b>
+          </td>
+          <td style="color: blue" [ngClass]="{'red':book.status5==='Aborted',
+                'yellow':book.status5==='Open',
+                'orange':book.status5==='Wait',
+                'orange1':book.status5==='Not Reached',
+                'brown':book.status5==='Cancelled',
+                'grey1':book.status5==='Not Connected',
+                'grey':book.status5==='Invalid Order ID'}">
+                <b>{{book.status5}}</b>
+          </td>
+      </tr>
+      </tbody>
+      </table>
+    </div>
+  </div>
+  </div>
+  </div>
+  <p id="e1">{{error.error.message}}</p>

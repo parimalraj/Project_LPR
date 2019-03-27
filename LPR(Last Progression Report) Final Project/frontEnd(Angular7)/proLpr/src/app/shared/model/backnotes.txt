@@ -1,0 +1,213 @@
+<!--<div class="container" style="background-color:azure">
+
+
+<div class="row" align="center">
+  <input type="text" value="{{text}}" class="form-control">
+</div>
+<div style="text-align: center; margin-top:50px">
+  <button class="btn btn-success" (click)="getData()">Show Text</button><br><br>
+</div>
+
+<div style="text-align: center; margin-top:50px">
+  <button class="btn btn-info" (click)="getClassData()">Click</button><br><br>
+</div>
+
+<div style="text-align: center; margin-top:50px">
+  <button class="btn btn-info" (click)="getClassDataId()">Click1</button><br><br>
+</div>
+
+</div>-->
+
+
+  <!--<div class="container">-->
+    <!--<table class="table" border="1" align="center" padding="20px">
+      <thead>
+        <td>Order Id</td>
+        <td>AIA</td>
+        <td>SIEBEL</td>
+      </thead>
+      <tbody>
+      <tr *ngFor="let book of myserv">
+        <td>{{book.id}}</td>
+        <td>{{book.status1}}</td>
+        <td>{{book.status2}}</td>
+      </tr>
+      </tbody>
+    </table>-->
+     <!--<table border="3" bgcolor="#0EBFE9" class="table table-striped">
+    
+    <thead>
+      <tr bgcolor="#472DCB" >
+
+        <th style="color: white"><h4>Public Order no:</h4></th>
+        <th style="color: white"><h4>WLP</h4></th>
+        <th style="color: white"><h4>Cordys</h4></th>
+         <th style="color: white"><h4>SIEBEL</h4></th>
+          <th style="color: white"><h4>AIA</h4></th>
+           <th style="color: white"><h4>BRM</h4></th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let book of myserv" >
+        <td>{{book.id}}</td>
+        <td>{{book.status1}}</td>
+        <td>{{book.status2}}</td>
+        <td>{{book.status3}}</td>
+        <td>{{book.status4}}</td>
+        <td>{{book.status5}}</td>
+      </tr>
+      </tbody>-->
+      
+    <!--<tbody>
+      <tr>
+        <td><b><font color="#990000">WLP-15028756</font></b></td>
+        <td>Completed</td>
+        <td>Completed</td>
+        <td>Completed</td>
+        <td>Completed</td>
+        <td>Completed</td>
+      </tr>
+      <tr>
+        <td><b><font color="#990000">WLP-85828051</font></b></td>
+        <td>Completed</td>
+        <td>Completed</td>
+        <td>Completed</td>
+        <td>Completed</td>
+        <td>Completed</td>
+      </tr>
+      <tr>
+        <td><b><font color="#990000">WLP-95028799</font></b></td>
+        <td>Completed</td>
+        <td>Completed</td>
+        <td>Completed</td>
+        <td>Completed</td>
+        <td>Completed</td>
+      </tr>
+      <tr>
+        <td><b><font color="#990000">WLP-54028756</font></b></td>
+        <td>Completed</td>
+        <td>Completed</td>
+        <td style="background-color: orange">Waiting</td>
+        <td style="background-color: yellow">Not Reached</td>
+        <td style="background-color: yellow">Not Reached</td>
+      </tr>
+      <tr>
+        <td><b><font color="#990000">WLP-98028753</font></b></td>
+        <td>Completed</td>
+        <td>Completed</td>
+        <td>Completed</td>
+        <td style="background-color: red">Aborted</td>
+        <td style="background-color: red">Aborted</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <br><br><br><br><br><br><br><br><br><br><br><br>-->
+<!--<div class="container">
+
+  <form #projectForm="ngForm" >	        
+				<div class = "form-group">  				
+						<input type="text"  name ="projectId" class="form-control" [(ngModel)] ="project.projectId"/>	
+				</div>
+
+        	<button type="submit"  class = "btn btn-success" (click)="getClassDataId(project.projectId)">Search</button>&nbsp;&nbsp;
+  </form>
+
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Public Order no:</th>
+        <th scope="col">WLP</th>
+        <th scope="col">Cordys</th>
+        <th scope="col">SIEBEL</th>
+        <th scope="col">AIA</th>
+        <th scope="col">BRM</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let book of myid">
+        <td>{{book.id}}</td>
+        <td>{{book.status1}}</td>
+        <td>{{book.status2}}</td>
+        <td>{{book.status3}}</td>
+        <td>{{book.status4}}</td>
+        <td>{{book.status5}}</td>
+      </tr>
+      </tbody>
+  </table>
+</div>--
+
+<div>
+  <form align="center">
+    <div class="form-group">
+      <label for="text">Search by id:</label>
+      <input type="text" value={{myser.status5}}>
+      <button class="btn btn-primary" (click)="getClassDataId()">Search Id</button>
+   <table>
+     <tbody>
+      <tr *ngFor="let book of name" >
+        <td>{{book.id}}</td>
+        <td>{{book.status1}}</td>
+        <td>{{book.status2}}</td>
+        <td>{{book.status3}}</td>
+        <td>{{book.status4}}</td>
+        <td>{{book.status5}}</td>
+      </tr>
+      </tbody>
+   </table>
+
+    </div>
+  </form>
+</div>
+-->
+
+
+<!--<button style="float:left; width:150px; height:1.4cm;">Submit</button><br><br><br><br><br><br>-->
+
+
+<!--<textarea #name placeholder="enter id" ></textarea>-->
+
+<!--<div style="text-align: center; margin-top:20px">
+  <button class="btn btn-info" (click)="getClassDataId(name.value)">Click</button><br><br>
+</div>-->
+
+  
+<!--<container-element [ngSwitch]="switch_expression">
+  <some-element *ngSwitchCase="match_expression_1">...</some-element>
+  ...
+  <some-element *ngSwitchDefault>...</some-element>
+</container-element>-->
+       <!--<div *ngIf=check({{book.status1}})>
+        <td style="color: blue"><b>{{book.status1}}</b></td>
+       </div>-->
+        
+
+
+
+
+        <!--The content below is only a placeholder and can be replaced.-->
+<!--<div style="text-align:center">
+  <h1>
+    Welcome to {{title}}!
+  </h1>
+  
+</div>-->
+
+<!--<div class="container" style="background-color:aquamarine">
+  <div class="row" align="center">
+    <button class="btn-btn-primary" (click)="getData()">Click Me</button>
+  </div>
+</div>
+
+<div class="row" align="center">
+  <div class="container">
+    <input class="form-control" type="text" value={{text}}>
+  </div>
+</div>-->
+
+<!--<nav>
+  <ul>
+    <li><a routerLink="/comp1">comp1</a></li>
+  </ul>
+</nav>-->

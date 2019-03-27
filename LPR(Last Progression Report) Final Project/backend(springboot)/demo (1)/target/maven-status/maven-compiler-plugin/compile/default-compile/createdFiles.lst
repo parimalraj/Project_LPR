@@ -1,0 +1,14 @@
+io\java\springbootstarter\topic\TopicController.class
+io\java\springbootstarter\Application.class
+META-INF\spring-configuration-metadata.json
+io\java\springbootstarter\topic\TopicService.class
+io\java\springbootstarter\repository\Topics2\Topics2Repository.class
+io\java\springbootstarter\model1\Topics1.class
+io\java\springbootstarter\repository\Topics1\Topics1Repository.class
+io\java\springbootstarter\model2\Topics2.class
+io\java\springbootstarter\configuration\db1Config.class
+io\java\springbootstarter\configuration\db2Config.class
+io\java\springbootstarter\exceptionhandler\ErrorDetails.class
+io\java\springbootstarter\exceptionhandler\GlobalExceptionalHandler.class
+io\java\springbootstarter\topic\Topic.class
+io\java\springbootstarter\exceptionhandler\ResourceNotFoundException.class

@@ -1,0 +1,36 @@
+/*these classes are used to define color codes to specific data which are being revealed in table */
+
+
+
+.red{
+  background-color: red;
+}
+.orange{
+  background-color: orange;
+}
+.yellow{
+  background-color: yellow;
+}
+.grey{
+  background-color: grey;
+}
+.grey1{
+  background-color: lightgrey;
+}
+.brown{
+   background-color:brown;
+}
+.orange1{
+  background-color:orangered;
+
+}
+
+
+
+
+
+
+#e1{
+  color: blue;
+  font-size: 150%;
+}
